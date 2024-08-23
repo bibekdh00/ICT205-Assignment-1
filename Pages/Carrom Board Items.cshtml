@@ -1,0 +1,117 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Carrom Board Items";
+    <h1>@ViewData["Title"]</h1>
+}
+
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: skyblue;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    p {
+        margin: 5px 0 20px 0;
+        font-size: 18px;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .product {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 15px;
+        padding: 20px;
+        text-align: center;
+        width: 200px;
+        transition: transform 0.3s ease;
+    }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h2 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .product p {
+            color: #555;
+        }
+
+    button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        button:hover {
+            background-color: #555;
+        }
+</style>
+
+
+
+<section class="products">
+    <div class="product">
+        <img src="https://th.bing.com/th/id/OIP.O3Z1Yl7H846d4141Fr5xQgHaHa?w=185&h=184&c=7&r=0&o=5&dpr=2&pid=1.7" alt="Carrom Board">
+        <h2>Carrom Board</h2>
+        <p>High-quality wooden Carrom board.</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIzxiyP-QP-wWg6_T8WZmmO72sckQ7MtJu6Q&s" alt="Carrom Striker">
+        <h2>Carrom Striker</h2>
+        <p>Professional-grade Carrom striker.</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEpVeJMaFEzogADQt031WtFtaU69WWGtemXg&s" alt="Carrom Coins">
+        <h2>Carrom Coins</h2>
+        <p>Set of smooth, durable Carrom coins.</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ8W1WrLuAW59tto1Z21xyXwc_pUZK5nnNrg&s" alt="Carrom Powder">
+        <h2>Carrom Powder</h2>
+        <p>Finest powder for fast and smooth gameplay.</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrZK1n51tEn5cy-M9vfaHDkaWQoCLQ00sbvQ&s" alt="Carrom Strategy Book">
+        <h2>Carrom Strategy Book</h2>
+        <p>Enhance your Carrom skills with expert strategies.</p>
+        <button>Add to Cart</button>
+    </div>
+</section>

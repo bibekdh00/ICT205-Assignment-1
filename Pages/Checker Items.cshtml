@@ -1,0 +1,112 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Checkers Items";
+    <h1>@ViewData["Title"]</h1>
+}
+
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: skyblue;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    p {
+        margin: 5px 0 20px 0;
+        font-size: 18px;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .product {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 15px;
+        padding: 20px;
+        text-align: center;
+        width: 200px;
+        transition: transform 0.3s ease;
+    }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h2 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .product p {
+            color: #555;
+        }
+
+    button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        button:hover {
+            background-color: #555;
+        }
+</style>
+
+
+
+<section class="products">
+    <div class="product">
+        <img src="https://cdn.britannica.com/06/50606-050-81C1729E/Checkerboard-draughtboard-play.jpg" style=" width: 200px ; height: 200px ; alt="Chess Board">
+        <h2>Checkers Board</h2>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVmAaNgXZssdFHKoppwXAUfAh27jjHF7VZ_A&s" style=" width: 200px ; height: 200px ; alt="Chess Pieces">
+        <h2>Checkers  Pieces</h2>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://i.etsystatic.com/12148927/r/il/a547be/5682970426/il_300x300.5682970426_n4ha.jpg" style=" width: 200px ; height: 200px ; alt="Chess Timer">
+        <h2>Checker Score Board</h2>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf72M6V-OTP4Eya544IZm9uYcgLcVSq3rFZg&s" style=" width: 200px ; height: 200px ; alt="Chess Book">
+        <h2>Checkers Book</h2>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://i.ytimg.com/vi/a9GrnDMpqxo/maxresdefault.jpg" style=" width: 200px ; height: 200px ; alt="Chess Pieces in Bucket">
+        <h2>Electronic Checkers</h2>
+        <button>Add to Cart</button>
+    </div>
+</section>

@@ -1,0 +1,117 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Chess Items";
+    <h1>@ViewData["Title"]</h1>
+}
+
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: skyblue;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    p {
+        margin: 5px 0 20px 0;
+        font-size: 18px;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .product {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 15px;
+        padding: 20px;
+        text-align: center;
+        width: 200px;
+        transition: transform 0.3s ease;
+    }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h2 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .product p {
+            color: #555;
+        }
+
+    button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        button:hover {
+            background-color: #555;
+        }
+</style>
+
+
+
+<section class="products">
+    <div class="product">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Chess_board_opening_staunton.jpg" style=" width: 200px ; height: 200px ; alt="Chess Board">
+        <h2>Chess Board</h2>
+        <p>A high-quality wooden chess board.</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://th.bing.com/th?id=ODL.fa9c4ef90aae5908be269b66cb730080&w=197&h=103&c=7&rs=1&qlt=80&o=6&dpr=2&pid=RichNav"  style=" width: 200px ; height: 200px ;  alt="Chess Pieces">
+        <h2>Chess Pieces</h2>
+        <p>Classic chess pieces in black and white.</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://th.bing.com/th?id=OIP.bS1eODX9uS_31KGi0Qz_IwHaFY&w=293&h=213&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2"  style=" width: 200px ; height: 200px ; alt="Chess Timer">
+        <h2>Chess Timer</h2>
+        <p>Precision timer for serious players.</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/NiiLoC/php0IYUAb.jpeg"  style=" width: 200px ; height: 200px ;  alt="Chess Book">
+        <h2>Chess Strategy Book</h2>
+        <p>Learn advanced strategies with this book.</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://th.bing.com/th?id=OPAC.q6lFTZo%2fFwztnw474C474&w=180&h=132&rs=1&o=5&dpr=2&pid=21.1"  style=" width: 200px ; height: 200px ;  alt="Chess Pieces in Bucket">
+        <h2>Chess Pieces in Bucket</h2>
+        <p>Portable chess pieces in a handy bucket.</p>
+        <button>Add to Cart</button>
+    </div>
+</section>

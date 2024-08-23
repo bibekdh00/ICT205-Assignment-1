@@ -1,0 +1,146 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: skyblue;
+    }
+
+    header.hero {
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+    .hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .hero-text {
+        max-width: 50%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn:hover {
+            background-color: red;
+        }
+
+    .sidebar {
+        background-color: #222;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+        .sidebar h3 {
+            margin-top: 0;
+            font-size: 23px;
+            text-align: center;
+            border-bottom: 2px solid #fff; /* Add a border for a clear separation */
+            padding-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .sidebar ul li {
+                margin: 15px 0;
+                padding: 10px;
+                background-color: #333;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+                .sidebar ul li a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 18px;
+                    display: block; /* Make the link take up the entire list item area */
+                    text-align: center;
+                }
+
+                .sidebar ul li:hover {
+                    background-color: red; /* Hover effect for list items */
+
+    .main-content {
+        padding: 50px 20px;
+    }
+
+
+    footer {
+        text-align: center;
+        background-color:skyblue;
+        color: white;
+        padding: 20px 0;
+    }
+
+
+
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>                                                                    Welcome to Elite Games</h1>
+                <p>                                                                    Your ultimate destination for classic board games</p>
+                <a href="#featured" class="btn">Shop Now</a>
+            </div>
+            <aside class="sidebar">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="/Chess Items">Chess</a></li>
+                    <li><a href="/Ludo Items">Ludo</a></li>
+                    <li><a href="/Carrom Board Items">Carrom</a></li>
+                    <li><a href="/Checker Items">Checkers</a></li>
+                </ul>
+            </aside>
+        </div>
+        <br /><br /><br /><br /><br />
+    <footer>
+        <p>&copy; 2024 Elite Games. All rights reserved.</p>
+    </footer>
+</body>
+</html>
